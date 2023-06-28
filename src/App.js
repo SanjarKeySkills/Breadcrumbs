@@ -16,19 +16,20 @@ const App = () => {
             </button>
 
             {show && (
-                <div className={burger__wrapper}>
-               <li>
-                   <a>Click one</a>
-               </li>
-                    <li>
-                        <a>Click two</a>
-                    </li>
-                    <li>
-                        <a>Click three</a>
-                    </li>
-                    <li>
-                        <a>Click four</a>
-                    </li>
+                <div>
+                    <ul>
+                        <li><a href="#">Click one</a></li>
+                        <li>
+                            <a href="#">Click two</a>
+                        </li>
+                        <li>
+                            <a href="#">Click three</a>
+                        </li>
+                        <li>
+                            <a href="#">Click four</a>
+                        </li>
+                    </ul>
+
                 </div>
             )}
         </div>
