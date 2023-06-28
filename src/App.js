@@ -5,20 +5,34 @@ import { useState } from "react";
 
 const App = () => {
     const [show, setShow] = useState(false);
+
     const handleBar = () => {
-        setShow(!show)
-    }
+        setShow(!show)};
+
     return (
         <div>
-            {
-                show ? <div> Hi man </div>:null
-            }
             <button onClick={handleBar}>
-                Hi
+                {show ? "Do you push?" : "Can close"}
             </button>
+
+            {show && (
+                <div className={burger__wrapper}>
+               <li>
+                   <a>Click one</a>
+               </li>
+                    <li>
+                        <a>Click two</a>
+                    </li>
+                    <li>
+                        <a>Click three</a>
+                    </li>
+                    <li>
+                        <a>Click four</a>
+                    </li>
+                </div>
+            )}
         </div>
         )}
-
 
 
 
